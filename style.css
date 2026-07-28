@@ -1,0 +1,156 @@
+:root {
+    --green-dark: #1f4d3a;
+    --green-sage: #6c8e5a;
+    --orange: #d9752e;
+    --sand: #d2b48c;
+    --cream: #f5f0e6;
+    --brown: #7a5533;
+    --white: #ffffff;
+    --text-dark: #2d342f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--green-dark);
+    color: var(--white);
+    padding: 24px 8%;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.tagline {
+    margin: 4px 0 0;
+    font-size: 1.1rem;
+}
+
+.hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 8%;
+    text-align: center;
+    background:
+        linear-gradient(rgba(31, 77, 58, 0.72), rgba(31, 77, 58, 0.72)),
+        url("Infographic.png") center/cover no-repeat;
+    color: var(--white);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    margin: 0 0 18px;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    font-size: 1.25rem;
+}
+
+.button {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button:hover {
+    background: #bd5f20;
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 65px 8%;
+}
+
+.section-white {
+    background: var(--white);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: var(--green-dark);
+    font-size: 2rem;
+}
+
+.section-intro {
+    max-width: 850px;
+    font-size: 1.1rem;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.location-card {
+    background: var(--cream);
+    border-top: 6px solid var(--orange);
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(31, 77, 58, 0.1);
+}
+
+.location-card h3 {
+    margin-top: 0;
+    color: var(--green-dark);
+}
+
+.portal-panel {
+    background: var(--green-dark);
+    color: var(--white);
+    border-radius: 14px;
+    padding: 40px;
+    text-align: center;
+}
+
+.portal-panel h2 {
+    color: var(--white);
+}
+
+footer {
+    background: var(--green-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 28px;
+}
+
+@media (max-width: 800px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+}
