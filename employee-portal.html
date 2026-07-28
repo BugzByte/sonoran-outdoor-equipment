@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Sonoran Outdoor Equipment Employee Portal and Network Operations Center."
+    >
+
+    <title>Employee Portal | Sonoran Outdoor Equipment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="portal-body">
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+    <div class="header-container">
+
+        <a
+            class="brand"
+            href="index.html"
+            aria-label="Return to the Sonoran Outdoor Equipment homepage"
+        >
+            <img
+                src="guide-document-header.PNG"
+                alt="Sonoran Outdoor Equipment"
+                class="brand-logo"
+            >
+        </a>
+
+        <nav class="main-nav" aria-label="Employee portal navigation">
+            <a href="index.html">Public Website</a>
+            <a class="portal-link" href="employee-portal.html">
+                Employee Portal
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="main-content">
+
+    <!-- Employee Portal Login -->
+    <section id="login-screen" class="portal-login-section">
+
+        <div class="portal-login-container">
+
+            <div class="portal-welcome-panel">
+
+                <div class="pace-login-mark" aria-hidden="true">
+                    🐢
+                </div>
+
+                <p class="portal-eyebrow">
+                    Sonoran Outdoor Equipment
+                </p>
+
+                <h1>
+                    Employee Portal
+                </h1>
+
+                <p class="portal-introduction">
+                    Authorized employees may access enterprise documentation,
+                    engineering standards, and assigned Enterprise Change Requests
+                    through the Network Operations Center.
+                </p>
+
+                <blockquote class="pace-quote">
+                    “Every great adventure begins with a reliable network.”
+                </blockquote>
+
+                <p class="pace-attribution">
+                    — Pace, SOE Mascot
+                </p>
+
+            </div>
+
+
+            <div class="login-card">
+
+                <p class="section-label">
+                    Employee Access
+                </p>
+
+                <h2>
+                    Connect to the NOC
+                </h2>
+
+                <p class="login-instructions">
+                    Enter your first name as your Employee ID and then enter
+                    the assigned NOC password.
+                </p>
+
+                <form id="portal-login-form">
+
+                    <div class="form-group">
+
+                        <label for="employee-name">
+                            Employee ID
+                        </label>
+
+                        <span class="field-help" id="employee-name-help">
+                            Enter your first name.
+                        </span>
+
+                        <input
+                            type="text"
+                            id="employee-name"
+                            name="employee-name"
+                            autocomplete="given-name"
+                            aria-describedby="employee-name-help"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="noc-password">
+                            NOC Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="noc-password"
+                            name="noc-password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button class="button login-button" type="submit">
+                        Connect to the NOC
+                    </button>
+
+
+                    <p
+                        id="login-message"
+                        class="login-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+                <p class="portal-notice">
+                    Authorized personnel only. Unauthorized access is prohibited.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Network Operations Center -->
+    <section id="noc-screen" class="noc-screen" hidden>
+
+        <div class="noc-banner">
+
+            <div class="section-container noc-banner-content">
+
+                <p class="portal-eyebrow">
+                    Sonoran Outdoor Equipment
+                </p>
+
+                <h1>
+                    Network Operations Center
+                </h1>
+
+                <p class="noc-welcome">
+                    Welcome, <span id="employee-welcome-name">Junior Network Engineer</span>!
+                </p>
+
+                <p>
+                    You are connected to the Sonoran Outdoor Equipment Network
+                    Operations Center. Use this portal to access enterprise
+                    documentation and assigned Enterprise Change Requests.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <section class="section noc-section">
+
+            <div class="section-container">
+
+                <div class="noc-heading">
+
+                    <div>
+                        <p class="section-label">
+                            Required Resources
+                        </p>
+
+                        <h2>
+                            Enterprise Documentation
+                        </h2>
+
+                        <p>
+                            Review and follow all enterprise standards before
+                            implementing an approved network change.
+                        </p>
+                    </div>
+
+                    <div class="pace-small" aria-hidden="true">
+                        🐢
+                    </div>
+
+                </div>
+
+
+                <div class="document-grid">
+
+                    <article class="document-card">
+
+                        <p class="document-type">
+                            Company Resource
+                        </p>
+
+                        <h3>
+                            Company Overview
+                        </h3>
+
+                        <p>
+                            Learn about Sonoran Outdoor Equipment, its business
+                            operations, Arizona locations, growth strategy, and
+                            technology goals.
+                        </p>
+
+                        <a class="button button-primary" href="#">
+                            Download Company Overview
+                        </a>
+
+                    </article>
+
+
+                    <article class="document-card">
+
+                        <p class="document-type">
+                            Required Standard
+                        </p>
+
+                        <h3>
+                            Enterprise Network Standards Guide
+                        </h3>
+
+                        <p>
+                            Review enterprise naming conventions, VLAN standards,
+                            security requirements, device standards, and
+                            documentation expectations.
+                        </p>
+
+                        <a class="button button-primary" href="#">
+                            Download Standards Guide
+                        </a>
+
+                    </article>
+
+
+                    <article class="document-card">
+
+                        <p class="document-type">
+                            Required Planning Document
+                        </p>
+
+                        <h3>
+                            Enterprise IP Addressing Plan
+                        </h3>
+
+                        <p>
+                            Develop and maintain the enterprise IPv4, IPv6, VLSM,
+                            VLAN, interface, and default-gateway assignments.
+                        </p>
+
+                        <a class="button button-primary" href="#">
+                            Download Addressing Plan
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section noc-ecr-section">
+
+            <div class="section-container">
+
+                <p class="section-label">
+                    Network Engineering Department
+                </p>
+
+                <h2 class="noc-section-title">
+                    Open Enterprise Change Requests
+                </h2>
+
+                <p class="noc-section-intro">
+                    Select the assigned change request, review the business
+                    requirements, and complete the approved implementation.
+                </p>
+
+
+                <div class="ecr-grid">
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-001</p>
+                        <h3>Enterprise Network Foundation</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-002</p>
+                        <h3>IPv6 Enterprise Deployment</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-003</p>
+                        <h3>OSPFv2 Enterprise Migration</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-004</p>
+                        <h3>OSPFv3 IPv6 Deployment</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-005</p>
+                        <h3>Enterprise Layer 2 Security</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-006</p>
+                        <h3>DHCP and Stateless DHCPv6 Deployment</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-007</p>
+                        <h3>Enterprise Access Control Lists</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-008</p>
+                        <h3>Enterprise Network Expansion</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-009</p>
+                        <h3>Network Address Translation</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-010</p>
+                        <h3>Enterprise WAN Deployment</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-011</p>
+                        <h3>GRE Tunnel Deployment</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+
+                    <article class="ecr-card">
+                        <span class="ticket-status">Open</span>
+                        <p class="ticket-number">ECR-012</p>
+                        <h3>Enterprise Network Management</h3>
+                        <a class="button ticket-button" href="#">
+                            Download Change Request
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+            <strong>Sonoran Outdoor Equipment</strong>
+            <p>Network Operations Center</p>
+        </div>
+
+        <div class="footer-right">
+            <p>Every great adventure begins with a reliable network.</p>
+            <p>&copy; 2026 Sonoran Outdoor Equipment</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    const loginForm = document.getElementById("portal-login-form");
+    const employeeNameInput = document.getElementById("employee-name");
+    const passwordInput = document.getElementById("noc-password");
+    const loginMessage = document.getElementById("login-message");
+    const loginScreen = document.getElementById("login-screen");
+    const nocScreen = document.getElementById("noc-screen");
+    const welcomeName = document.getElementById("employee-welcome-name");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const employeeName = employeeNameInput.value.trim();
+        const nocPassword = passwordInput.value;
+
+        if (employeeName === "") {
+            loginMessage.textContent =
+                "Please enter your first name as your Employee ID.";
+
+            employeeNameInput.focus();
+            return;
+        }
+
+        if (nocPassword.toLowerCase() !== "pace") {
+            loginMessage.textContent =
+                "The NOC password could not be verified. Please try again.";
+
+            passwordInput.value = "";
+            passwordInput.focus();
+            return;
+        }
+
+        loginMessage.textContent =
+            "Connection established. Loading the Network Operations Center.";
+
+        welcomeName.textContent = employeeName;
+
+        window.setTimeout(function () {
+            loginScreen.hidden = true;
+            nocScreen.hidden = false;
+
+            document.title =
+                "Network Operations Center | Sonoran Outdoor Equipment";
+
+            nocScreen.scrollIntoView();
+
+            nocScreen.setAttribute("tabindex", "-1");
+            nocScreen.focus();
+        }, 700);
+    });
+</script>
+
+</body>
+</html>
