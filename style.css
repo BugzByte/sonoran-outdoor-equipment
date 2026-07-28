@@ -649,3 +649,52 @@ a {
         text-align: left;
     }
 }
+
+/* ==========================================================
+   Accessibility
+   ========================================================== */
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    z-index: 2000;
+    padding: 12px 18px;
+    background: var(--white);
+    color: var(--forest-dark);
+    border: 3px solid var(--orange);
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 4px solid #FFD166;
+    outline-offset: 4px;
+    border-radius: 5px;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+}
