@@ -4,7 +4,6 @@ This folder contains official enterprise documentation and Enterprise Change Req
 
 ## Enterprise Documentation
 
-- Company Overview
 - Enterprise Network Standards Guide
 - Enterprise IP Addressing Plan
 
