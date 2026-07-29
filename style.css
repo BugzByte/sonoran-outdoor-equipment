@@ -1265,3 +1265,11 @@ section {
 .pace-login-mark {
     flex-shrink: 0;
 }
+
+.portal-section-title {
+    margin: 0 0 12px;
+    color: var(--forest-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.25rem, 4vw, 3.6rem);
+    line-height: 1.1;
+}
