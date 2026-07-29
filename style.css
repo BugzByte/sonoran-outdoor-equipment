@@ -1242,3 +1242,25 @@ section {
     padding-bottom: 1.5rem;
     border-top: 2px solid #d9782d;
 }
+
+.portal-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portal-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.portal-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.pace-login-mark {
+    flex-shrink: 0;
+}
