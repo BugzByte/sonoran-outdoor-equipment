@@ -116,7 +116,7 @@ a {
     display: flex;
     align-items: center;
     background:
-        url("hero-homepage.png")
+        url("hero-background.png")
         center center / cover
         no-repeat;
     overflow: hidden;
@@ -718,7 +718,7 @@ section {
             rgba(16, 46, 36, 0.88),
             rgba(23, 63, 50, 0.9)
         ),
-        url("hero-homepage.png") center / cover no-repeat;
+        url("hero-background.png") center / cover no-repeat:
 }
 
 .portal-login-container {
