@@ -1122,3 +1122,116 @@ section {
         min-height: 230px;
     }
 }
+
+/* =========================================================
+   NOC EXPANDABLE INFORMATION PANELS
+   ========================================================= */
+
+.noc-details {
+    margin-top: 1rem;
+    border: 1px solid #c8d2cc;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(22, 48, 38, 0.08);
+    overflow: hidden;
+}
+
+.noc-details + .noc-details {
+    margin-top: 0.85rem;
+}
+
+.noc-details summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    color: #173b2d;
+    background-color: #f3f7f4;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Removes the browser's default disclosure triangle. */
+.noc-details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Adds a consistent arrow to the right side of each panel. */
+.noc-details summary::after {
+    content: "›";
+    margin-left: auto;
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+/* Rotates the arrow when the panel is expanded. */
+.noc-details[open] summary::after {
+    transform: rotate(-90deg);
+}
+
+.noc-details summary:hover {
+    background-color: #e8f0eb;
+}
+
+.noc-details summary:focus-visible {
+    outline: 3px solid #b65f35;
+    outline-offset: -3px;
+}
+
+.noc-details[open] summary {
+    color: #ffffff;
+    background-color: #254f3d;
+}
+
+.details-content {
+    padding: 1.25rem;
+    border-top: 1px solid #dbe3de;
+}
+
+.details-content p:first-child {
+    margin-top: 0;
+}
+
+.details-content p:last-child {
+    margin-bottom: 0;
+}
+
+.details-content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.65rem;
+    color: #173b2d;
+    font-size: 1rem;
+}
+
+.details-content ul {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.5rem;
+}
+
+.details-content li {
+    margin-bottom: 0.55rem;
+}
+
+.details-content li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .noc-details summary {
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+    }
+
+    .details-content {
+        padding: 1rem;
+    }
+}
