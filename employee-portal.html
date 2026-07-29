@@ -615,10 +615,8 @@
             document.title =
                 "Network Operations Center | Sonoran Outdoor Equipment";
 
-            nocScreen.scrollIntoView();
-
             nocScreen.setAttribute("tabindex", "-1");
-            nocScreen.focus();
+            nocScreen.focus({ preventScroll: true });
         }, 700);
     });
 </script>
