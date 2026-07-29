@@ -617,6 +617,11 @@
 
             nocScreen.setAttribute("tabindex", "-1");
             nocScreen.focus({ preventScroll: true });
+
+            nocScreen.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
         }, 700);
     });
 </script>
