@@ -1235,3 +1235,10 @@ section {
         padding: 1rem;
     }
 }
+
+.resource-section-heading {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-top: 2px solid #d9782d;
+}
