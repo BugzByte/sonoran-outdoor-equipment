@@ -1537,3 +1537,78 @@ section {
     font-size: 17px;
     line-height: 1.65;
 }
+
+/* =========================================================
+   Employee Portal Typography
+   ========================================================= */
+
+.portal-body {
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+/* Normal paragraph and list text */
+.portal-body p,
+.portal-body li {
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* Main expandable card titles */
+.orientation-card summary,
+.noc-details summary {
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+/* Smaller description beneath each card title */
+.orientation-title small {
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+/* Text inside opened orientation cards */
+.orientation-content p,
+.orientation-content li {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Section headings */
+.portal-section-title,
+.orientation-heading h2,
+.noc-ecr-section h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Card headings */
+.location-card h3,
+.document-card h3,
+.ecr-card h3,
+.change-process h3 {
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+/* Small uppercase labels */
+.section-label,
+.portal-eyebrow,
+.document-type,
+.ticket-number {
+    font-size: 0.9rem;
+}
+
+/* Fine print */
+.portal-notice,
+.orientation-callout,
+.locations-figure figcaption {
+    font-size: 0.95rem;
+}
+
+/* Buttons and download links */
+.portal-body .button {
+    font-size: 1rem;
+}
+
+
