@@ -246,7 +246,7 @@ a {
 
 .about-content h2,
 .section-heading h2,
-.employee-copy h2 
+.employee-copy h2,
 .resource-section-heading h2 {
     margin: 0 0 22px;
     color: var(--forest-dark);
@@ -976,7 +976,7 @@ section {
             rgba(16, 46, 36, 0.88),
             rgba(23, 63, 50, 0.9)
         ),
-        url("hero-background.png") center / cover no-repeat:
+        url("hero-background.png") center / cover no-repeat;
 }
 
 .portal-login-container {
@@ -1532,83 +1532,216 @@ section {
     line-height: 1.1;
 }
 
-/* Employee Portal readable base text */
-.portal-body {
-    font-size: 17px;
-    line-height: 1.65;
+/* ==========================================================
+   Accessible Sitewide Typography and Readability
+   ========================================================== */
+
+html {
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
-/* =========================================================
-   Employee Portal Typography
-   ========================================================= */
-
-.portal-body {
-    font-size: 17px;
-    line-height: 1.65;
-}
-
-/* Normal paragraph and list text */
-.portal-body p,
-.portal-body li {
-    font-size: 1rem;
-    line-height: 1.65;
-}
-
-/* Main expandable card titles */
-.orientation-card summary,
-.noc-details summary {
-    font-size: 1.15rem;
-    line-height: 1.4;
-}
-
-/* Smaller description beneath each card title */
-.orientation-title small {
-    font-size: 0.95rem;
-    line-height: 1.45;
-}
-
-/* Text inside opened orientation cards */
-.orientation-content p,
-.orientation-content li {
+body {
     font-size: 1rem;
     line-height: 1.7;
 }
 
-/* Section headings */
-.portal-section-title,
-.orientation-heading h2,
-.noc-ecr-section h2 {
-    font-size: 2rem;
-    line-height: 1.2;
+p,
+li,
+label,
+input,
+button,
+a {
+    line-height: 1.6;
 }
 
-/* Card headings */
-.location-card h3,
-.document-card h3,
-.ecr-card h3,
-.change-process h3 {
+/* Primary navigation and controls */
+.main-nav a,
+.button,
+.login-button {
+    font-size: 1rem;
+}
+
+/* Small labels remain visually secondary without becoming tiny. */
+.hero-eyebrow,
+.section-label,
+.portal-eyebrow,
+.location-type,
+.document-type,
+.ticket-number,
+.ticket-status {
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+/* Homepage body copy */
+.about-content p,
+.section-heading p:last-child,
+.location-card p,
+.future-growth p,
+.employee-copy p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Homepage values: Quality, Service, Adventure, Mission, Vision, Values */
+.value-item {
+    padding: 1.35rem 1.15rem;
+}
+
+.value-item strong {
     font-size: 1.15rem;
     line-height: 1.35;
 }
 
-/* Small uppercase labels */
-.section-label,
-.portal-eyebrow,
-.document-type,
-.ticket-number {
+.value-item span {
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.location-status,
+.future-location-list span {
     font-size: 0.9rem;
 }
 
-/* Fine print */
-.portal-notice,
-.orientation-callout,
-.locations-figure figcaption {
-    font-size: 0.95rem;
-}
-
-/* Buttons and download links */
-.portal-body .button {
+/* Login screen */
+.portal-introduction,
+.login-instructions,
+.form-group label,
+.form-group input {
     font-size: 1rem;
 }
 
+.field-help,
+.pace-attribution,
+.portal-notice {
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
 
+/* NOC and orientation */
+.orientation-section {
+    width: min(1200px, 90%);
+    margin: 4rem auto;
+}
+
+.orientation-heading {
+    max-width: 900px;
+}
+
+.orientation-heading h2,
+.portal-section-title {
+    font-size: clamp(2.25rem, 4vw, 3.6rem);
+    line-height: 1.15;
+}
+
+.orientation-heading p,
+.noc-section-intro,
+.resource-section-heading > p:last-child {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.orientation-card summary {
+    min-height: 88px;
+    padding: 1.4rem 1.5rem;
+}
+
+.orientation-title span:first-child {
+    font-size: 1.3rem;
+    line-height: 1.35;
+}
+
+.orientation-title small {
+    display: block;
+    margin-top: 0.35rem;
+    color: #505852;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.orientation-content p,
+.orientation-content li,
+.orientation-callout,
+.change-process p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.change-process h3 {
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.locations-figure figcaption {
+    color: #59615c;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* Documentation and change-request cards */
+.document-card h3,
+.ecr-card h3,
+.orientation-content .location-card h3 {
+    font-size: 1.4rem;
+    line-height: 1.35;
+}
+
+.document-card p:not(.document-type),
+.ecr-card p,
+.orientation-content .location-card p {
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+/* Expandable NOC panels retained for future use */
+.noc-details summary {
+    min-height: 64px;
+    font-size: 1.15rem;
+}
+
+.details-content,
+.details-content p,
+.details-content li {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.details-content h4 {
+    font-size: 1.15rem;
+}
+
+/* Clear keyboard focus for summaries and form controls. */
+summary:focus-visible,
+input:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 4px solid #ffd166;
+    outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+
+    .orientation-heading h2,
+    .portal-section-title {
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .orientation-title small {
+        display: block;
+    }
+
+    .orientation-card summary {
+        align-items: flex-start;
+        min-height: 0;
+        padding: 1.2rem;
+    }
+
+    .orientation-content {
+        padding: 1.35rem;
+    }
+}
